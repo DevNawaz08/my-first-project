@@ -74,3 +74,40 @@ button:hover {
 .operation:hover {
     background: #ff6347;
 }
+
+
+/* Make calculator responsive */
+@media screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(4, 50px); /* smaller buttons */
+        gap: 8px;
+    }
+
+    .result {
+        font-size: 22px;
+        height: 35px;
+    }
+
+    button {
+        height: 35px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        grid-template-columns: repeat(4, 40px); /* even smaller */
+        gap: 6px;
+    }
+
+    .result {
+        font-size: 20px;
+        height: 30px;
+    }
+
+    button {
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
